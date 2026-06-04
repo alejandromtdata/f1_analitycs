@@ -1,0 +1,25 @@
+RoundNumber,RaceName,Country,CircuitName,EventDate,LengthKm,LeftTurns,RightTurns,CircuitImagePath
+1,Australian Grand Prix,Australia,Melbourne,2025-03-16,,,,images/circuits/australia.png
+2,Chinese Grand Prix,China,Shanghai,2025-03-23,,,,images/circuits/china.png
+3,Japanese Grand Prix,Japan,Suzuka,2025-04-06,,,,images/circuits/japan.png
+4,Bahrain Grand Prix,Bahrain,Sakhir,2025-04-13,,,,images/circuits/bahrain.png
+5,Saudi Arabian Grand Prix,Saudi Arabia,Jeddah,2025-04-20,,,,images/circuits/arabia_saudi.png
+6,Miami Grand Prix,United States,Miami Gardens,2025-05-04,,,,images/circuits/miami.png
+7,Emilia Romagna Grand Prix,Italy,Imola,2025-05-18,,,,images/circuits/emilia_romagna.png
+8,Monaco Grand Prix,Monaco,Monaco,2025-05-25,,,,images/circuits/monaco.png
+9,Spanish Grand Prix,Spain,Barcelona,2025-06-01,,,,images/circuits/spain.png
+10,Canadian Grand Prix,Canada,Montréal,2025-06-15,,,,images/circuits/canada.png
+11,Austrian Grand Prix,Austria,Spielberg,2025-06-29,,,,images/circuits/austria.png
+12,British Grand Prix,United Kingdom,Silverstone,2025-07-06,,,,images/circuits/great_britain.png
+13,Belgian Grand Prix,Belgium,Spa-Francorchamps,2025-07-27,,,,images/circuits/belgium.png
+14,Hungarian Grand Prix,Hungary,Budapest,2025-08-03,,,,images/circuits/hungary.png
+15,Dutch Grand Prix,Netherlands,Zandvoort,2025-08-31,,,,images/circuits/netherlands.png
+16,Italian Grand Prix,Italy,Monza,2025-09-07,,,,images/circuits/italy.png
+17,Azerbaijan Grand Prix,Azerbaijan,Baku,2025-09-21,,,,images/circuits/baku.png
+18,Singapore Grand Prix,Singapore,Marina Bay,2025-10-05,,,,images/circuits/singapore.png
+19,United States Grand Prix,United States,Austin,2025-10-19,,,,images/circuits/usa.png
+20,Mexico City Grand Prix,Mexico,Mexico City,2025-10-26,,,,images/circuits/mexico.png
+21,São Paulo Grand Prix,Brazil,São Paulo,2025-11-09,,,,images/circuits/brasil.png
+22,Las Vegas Grand Prix,United States,Las Vegas,2025-11-22,,,,images/circuits/las_vegas.png
+23,Qatar Grand Prix,Qatar,Lusail,2025-11-30,,,,images/circuits/qatar.png
+24,Abu Dhabi Grand Prix,United Arab Emirates,Yas Island,2025-12-07,,,,images/circuits/abu_dhabi.png

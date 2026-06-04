@@ -1,0 +1,30 @@
+# F1 Analytics Dashboard 2025
+
+End-to-end Formula 1 analytics project using:
+
+- FastF1
+- Python
+- Pandas
+- SQL
+- Power BI
+
+## Features
+
+- Driver analysis
+- Lap evolution
+- Stint strategy
+- Position changes
+- Tyre analysis
+- Race insights
+
+## Data Source
+
+FastF1 API
+
+## Tech Stack
+
+Python  
+Power BI  
+Pandas  
+FastF1  
+SQL
