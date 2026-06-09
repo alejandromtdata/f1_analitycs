@@ -15,13 +15,8 @@ drivers = df[
     ]
 ]
 
-# Eliminar duplicados
+# Eliminar duplicados iniciales
 drivers = drivers.drop_duplicates()
-
-# Ordenar por dorsal
-drivers = drivers.sort_values(
-    by="DriverNumber"
-)
 
 # Renombrar columnas
 drivers = drivers.rename(
@@ -34,6 +29,22 @@ drivers = drivers.rename(
 drivers["DriverCode"] = drivers[
     "DriverCode"
 ].str.strip()
+
+# Mantener Tsunoda en Red Bull
+drivers = drivers[
+    ~(
+        (drivers["DriverCode"] == "TSU")
+        & (drivers["Team"] == "Racing Bulls")
+    )
+]
+
+# Mantener Lawson en Racing Bulls
+drivers = drivers[
+    ~(
+        (drivers["DriverCode"] == "LAW")
+        & (drivers["Team"] == "Red Bull Racing")
+    )
+]
 
 # Diccionario nombres completos
 driver_names = {
@@ -65,21 +76,34 @@ drivers["FullName"] = drivers[
     "DriverCode"
 ].map(driver_names)
 
-# Mapear nombres completos
-drivers["FullName"] = drivers[
-    "DriverCode"
-].map(driver_names)
+# Un piloto por dorsal
+drivers = drivers.drop_duplicates(
+    subset=["DriverNumber"]
+)
 
-# Nuevas columnas vacías
+# Ordenar por dorsal
+drivers = drivers.sort_values(
+    by="DriverNumber"
+)
+
+# Columnas auxiliares
 drivers["TeamColor"] = ""
-# Generar rutas imágenes pilotos
-drivers["PhotoPath"] = (
+
+# URLs imágenes pilotos
+base_url = (
+    "https://raw.githubusercontent.com/"
+    "alejandromtdata/f1_analitycs/main/"
     "images/drivers_images/"
+)
+
+drivers["PhotoPath"] = (
+    base_url
     + drivers["FullName"]
         .str.lower()
         .str.replace(" ", "_")
     + ".webp"
 )
+
 drivers["TeamLogoPath"] = ""
 
 # Reordenar columnas
@@ -109,20 +133,5 @@ drivers.to_csv(
 
 print("\ndim_drivers creada correctamente")
 print(drivers.head())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

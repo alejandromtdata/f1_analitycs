@@ -75,6 +75,27 @@ def format_lap_time(time_str):
     return f"{minutes}:{seconds:06.3f}"
 
 # =========================
+# Crear columnas numéricas para cálculos BI
+# =========================
+
+laps["Sector1Seconds"] = pd.to_timedelta(
+    laps["Sector1Time"]
+).dt.total_seconds()
+
+laps["Sector2Seconds"] = pd.to_timedelta(
+    laps["Sector2Time"]
+).dt.total_seconds()
+
+laps["Sector3Seconds"] = pd.to_timedelta(
+    laps["Sector3Time"]
+).dt.total_seconds()
+
+laps["LapTimeSeconds"] = pd.to_timedelta(
+    laps["LapTime"]
+).dt.total_seconds()
+
+
+# =========================
 # Formatear tiempos
 # =========================
 
