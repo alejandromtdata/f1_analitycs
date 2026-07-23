@@ -34,14 +34,6 @@ laps = df[
 ]
 
 # =========================
-# Eliminar filas sin tiempo
-# =========================
-
-laps = laps.dropna(
-    subset=["LapTime"]
-)
-
-# =========================
 # Convertir columnas numéricas
 # =========================
 
