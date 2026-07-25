@@ -92,8 +92,8 @@ drivers["TeamColor"] = ""
 # URLs imágenes pilotos
 base_url = (
     "https://raw.githubusercontent.com/"
-    "alejandromtdata/f1_analitycs/main/"
-    "images/drivers_images/"
+    "alejandromtdata/f1_analytics/main/"
+    "assets/drivers_images/"
 )
 
 drivers["PhotoPath"] = (
