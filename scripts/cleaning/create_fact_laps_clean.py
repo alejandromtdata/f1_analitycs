@@ -107,9 +107,7 @@ laps["LapTime"] = laps[
     "LapTime"
 ].apply(format_lap_time)
 
-# =========================
 # Ordenar datos
-# =========================
 
 laps = laps.sort_values(
     by=[
@@ -119,28 +117,23 @@ laps = laps.sort_values(
     ]
 )
 
-# =========================
 # Crear carpeta clean
-# =========================
 
 os.makedirs(
     "data/clean",
     exist_ok=True
 )
 
-# =========================
 # Exportar CSV limpio
-# =========================
 
 laps.to_csv(
     "data/clean/fact_laps_clean.csv",
     index=False
 )
 
-# =========================
 # Preview
-# =========================
 
 print("\nfact_laps_clean creada correctamente")
 
 print(laps.head())
+

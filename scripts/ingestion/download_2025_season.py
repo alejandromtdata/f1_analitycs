@@ -43,6 +43,13 @@ for race in races:
         session = fastf1.get_session(2025, race, "R")
         session.load()
 
+        event = session.event
+
+        laps["RaceName"] = event["EventName"]
+        laps["Country"] = event["Country"]
+        laps["CircuitName"] = event["Location"]
+        laps["RoundNumber"] = event["RoundNumber"]
+
         laps = session.laps.copy()
 
         # Añadir nombre GP
