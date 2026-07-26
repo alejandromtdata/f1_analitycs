@@ -52,9 +52,6 @@ for race in races:
 
         laps = session.laps.copy()
 
-        # Añadir nombre GP
-        laps["RaceName"] = race
-
         # Seleccionar columnas útiles
         laps = laps[
             [
