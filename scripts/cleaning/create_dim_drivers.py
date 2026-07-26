@@ -93,7 +93,7 @@ drivers["TeamColor"] = ""
 github_assets = (
     "https://raw.githubusercontent.com/"
     "alejandromtdata/f1_analytics/main/"
-    "assets/drivers"
+    "assets/drivers/"
 )
 
 drivers["PhotoPath"] = (
