@@ -62,16 +62,18 @@ circuit_images = {
     "Abu Dhabi Grand Prix": "abu_dhabi.png"
 }
 
-# Generar rutas imágenes circuitos
+github_assets = (
+    "https://raw.githubusercontent.com/"
+    "alejandromtdata/f1_analytics/main/"
+    "assets/"
+)
+
 races["CircuitImagePath"] = (
-    "images/circuits/"
+    github_assets
+    + "circuits/"
     + races["RaceName"].map(circuit_images)
 )
-# Generar rutas imágenes circuitos
-races["CircuitImagePath"] = (
-    "images/circuits/"
-    + races["RaceName"].map(circuit_images)
-)
+
 # Reordenar columnas
 races = races[
     [

@@ -89,21 +89,21 @@ drivers = drivers.sort_values(
 # Columnas auxiliares
 drivers["TeamColor"] = ""
 
-# URLs imágenes pilotos
-base_url = (
+
+github_assets = (
     "https://raw.githubusercontent.com/"
     "alejandromtdata/f1_analytics/main/"
-    "assets/drivers_images/"
+    "assets/drivers"
 )
 
 drivers["PhotoPath"] = (
-    base_url
+    github_assets
+    + "drivers/"
     + drivers["FullName"]
         .str.lower()
         .str.replace(" ", "_")
     + ".webp"
 )
-
 drivers["TeamLogoPath"] = ""
 
 # Reordenar columnas

@@ -53,13 +53,17 @@ team_logos = {
     "Red Bull Racing": "red_bull.jpg",
     "Williams": "williams.jpg"
 }
-
-# Generar rutas logos equipos
-teams["TeamLogoPath"] = (
-    "images/teams/"
-    + teams["Team"].map(team_logos)
+github_assets = (
+    "https://raw.githubusercontent.com/"
+    "alejandromtdata/f1_analytics/main/"
+    "assets/"
 )
 
+teams["TeamLogoPath"] = (
+    github_assets
+    + "teams/"
+    + teams["Team"].map(team_logos)
+)
 
 # Reordenar columnas
 teams = teams[
